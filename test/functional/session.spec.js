@@ -7,10 +7,11 @@ const Factory = use("Factory");
 const User = use("App/Models/User");
 
 trait("Test/ApiClient");
+trait("DatabaseTransactions");
 
 test("Teste de JWT", async ({ assert, client }) => {
   const sessionPayload = {
-    email: "Pslima@uneb.br",
+    email: "pslima@uneb.br",
     password: "123456"
   };
 
@@ -19,7 +20,7 @@ test("Teste de JWT", async ({ assert, client }) => {
   const response = await client
     .post("/sessions")
     .send({
-      email: "Pslima@uneb.br",
+      email: "pslima@uneb.br",
       password: "123456"
     })
     .end();
