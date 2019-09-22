@@ -9,3 +9,7 @@ tmp
 
 # The development sqlite file
 database/development.sqlite
+yarn.lock
+yarn-error.log
+yarn-error.log
+yarn.lock
